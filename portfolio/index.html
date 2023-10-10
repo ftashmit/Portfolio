@@ -48,7 +48,7 @@
             border: 0;
             background: #505052;
             height: 1.2px;
-            margin: 20px 150px;
+            margin: 3px 120px;
         }
 
         .left{
@@ -61,7 +61,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin: 150px 0; 
+            margin: 80px 0; 
             
         }
 
@@ -84,6 +84,7 @@
         }
         .greytext{
             color: gray;
+            font-size: 0.9rem;
         }
         #element{
             color: rgb(159, 123, 194);
@@ -93,16 +94,86 @@
             max-width: 80vw;
             margin: auto;
             font-family: 'IBM Plex Mono', monospace;
-            font-size: 1.12rem;
+            font-size: 1.1rem;
+        }
+        #about{
+            padding: 3px 0;
+            color: white;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-right: 10%;
+        }
+        .aboutcol1{
+            flex-basis: 35%;
+            
+        }
+        .aboutcol1 img{
+            width: 80%;
+            border-radius: 20px;
+            margin-top: 20%;
+            margin-left: 30%;
+        }
+        .aboutcol2{
+            flex-basis: 60%;
+        }
+        .aboutcol2 h1{
+            
+            margin-top: 10%;
+            margin-bottom: 4.5%;
+            font-family: Inter, sans-serif;
+            font-size: 2rem;
+        }
+        .tabtitles{
+            display: flex;
+            margin: 20px 0 40px;
+        }
+        .tablinks{
+            margin-right: 50px;
+            font-family: Inter, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+        .tablinks:hover{
+            color: rgb(205, 205, 245);
+            font-size: 1.15rem;
+        }
+        .tablinks::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background: rgb(57, 124, 216);
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: 0.5s;
+        }
+        .tablinks.activelink::after{
+            width: 50%;
         }
 
-        .secondsection h1{
-            max-width: 80vw;
-            margin: auto;
-            padding-bottom: 10px;
-            font-family: Inter, sans-serif;
-            font-size: 1.9rem;
+        .tabcontents ul li{
+            list-style: none;
+            margin: 10px 0;
+            font-size: 10px;
+            color: rgb(206, 203, 203);
         }
+        .tabcontents ul li span{
+            color: rgb(114, 179, 235);
+            font-size: 14px;
+            font-weight: 1000;
+        }
+        .tabcontents{
+            display: none;
+        }
+        .tabcontents.activetab{
+            display: block;
+        }
+
     </style>
 </head>
 <body>
@@ -134,10 +205,43 @@
             </div>
         </section>
         <hr>
-        <section class="secondsection">
-            <h1>{About Me.}</h1>
-            <span class="greytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, numquam? Facilis animi impedit qui at reprehenderit iure eos adipisci earum, harum ea vero dicta ullam omnis atque, est quam. Consequuntur, debitis soluta dolore impedit amet tempora dignissimos? Accusamus officia, illo iste obcaecati natus ut cum, dolores quo commodi nesciunt maxime quia necessitatibus vitae ullam molestiae culpa quasi nulla alias autem reiciendis et minima ad dolorem! Fugiat reprehenderit vel qui vitae maiores, sunt repellat, veniam non a nihil esse nam magnam! A saepe, modi sit ipsum magni consectetur culpa inventore commodi tempore dolorum praesentium natus iusto perspiciatis explicabo adipisci! Exercitationem, delectus?</span>
-        </section>
+        <div id="about">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="images/pfp.jpg" alt="pfp">
+                </div>
+                <div class="aboutcol2">
+                    <h1>{About Me.}</h1>
+                    <p><span class="greytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur atque minus odit, quas aperiam delectus perspiciatis eius dicta totam. Suscipit sint quod ullam a laboriosam totam nulla? Unde aliquam eos sit aspernatur libero at, delectus numquam est facere quo illum, aliquid voluptatem cum beatae ex corporis, magni quas maxime laborum atque amet. Illo soluta accusantium unde debitis nostrum minima molestiae assumenda autem enim exercitationem commodi aspernatur libero culpa magni, maxime ex provident dignissimos? Neque optio inventore magnam temporibus totam harum minima cum at natus est nesciunt et corrupti, saepe labore reprehenderit veniam. Deleniti doloribus eius omnis voluptas perferendis voluptatibus quibusdam!
+                    </span></p>
+                    <div class="tabtitles">
+                        <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks"onclick="opentab('experience')">Experience</p>
+                        <p class="tablinks"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tabcontents activetab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li><span>CodSoft|(October 2023-November 2023)</span><br>Worked as a WebDeveloper Intern where I had created websites based on HTML5, CSS & JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>University of Engineering & Management,Kolkata|(2022-Present)</span><br>B.tech in Computer Science & Technology</li>
+                            <li><span>DPS Megacity,Kolkata|(2020-2022)</span><br> Class XII High School Diploma,ISC</li>
+                            <li><span>DPS Megacity,Kolkata|(2015-2020)</span><br> Class X, ICSE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
@@ -146,5 +250,21 @@
           typeSpeed: 70,
         });
       </script>
+
+      <script>
+        var tablinks=document.getElementsByClassName("tablinks");
+        var tabcontents=document.getElementsByClassName("tabcontents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("activelink");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetab");
+        }
+
+      </script>
 </body>
-</html>
+</html> 
