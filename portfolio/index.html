@@ -5,176 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashmit Dutta</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@700&display=swap" rel="stylesheet">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: rgb(0, 0, 7);
-            color: white;
-            font-family: 'IBM Plex Mono', monospace;
-        }
-
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(30, 30, 58);
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li{
-            list-style: none;
-            margin: 0 23px;
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: white;
-            font-size: 0.9rem;
-        }
-        nav ul li a:hover{
-            text-decoration: none;
-            color: rgb(155, 155, 245);
-            font-size: 1.01rem;
-        }
-        main hr{
-            border: 0;
-            background: #505052;
-            height: 1.2px;
-            margin: 3px 120px;
-        }
-
-        .left{
-            font-size: 1.5rem;
-            font-weight: 600;
-            
-        }
-
-        .firstsection{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 80px 0; 
-            
-        }
-
-        .firstsection >div{
-            width: 30%;
-        }
-        
-        .leftsection{
-            font-family: Inter, sans-serif;
-            font-size: 2.5rem;
-            
-        }
-
-        .rightsection img{
-            width: 80%;  
-        }
-
-        .purpletext{
-            color: rgb(85, 159, 243);
-        }
-        .greytext{
-            color: gray;
-            font-size: 0.9rem;
-        }
-        #element{
-            color: rgb(159, 123, 194);
-
-        }
-        .secondsection {
-            max-width: 80vw;
-            margin: auto;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 1.1rem;
-        }
-        #about{
-            padding: 3px 0;
-            color: white;
-        }
-        .row{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-right: 10%;
-        }
-        .aboutcol1{
-            flex-basis: 35%;
-            
-        }
-        .aboutcol1 img{
-            width: 80%;
-            border-radius: 20px;
-            margin-top: 20%;
-            margin-left: 30%;
-        }
-        .aboutcol2{
-            flex-basis: 60%;
-        }
-        .aboutcol2 h1{
-            
-            margin-top: 10%;
-            margin-bottom: 4.5%;
-            font-family: Inter, sans-serif;
-            font-size: 2rem;
-        }
-        .tabtitles{
-            display: flex;
-            margin: 20px 0 40px;
-        }
-        .tablinks{
-            margin-right: 50px;
-            font-family: Inter, sans-serif;
-            font-size: 18px;
-            font-weight: 500;
-            cursor: pointer;
-            position: relative;
-        }
-        .tablinks:hover{
-            color: rgb(205, 205, 245);
-            font-size: 1.15rem;
-        }
-        .tablinks::after{
-            content: '';
-            width: 0;
-            height: 3px;
-            background: rgb(57, 124, 216);
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-            transition: 0.5s;
-        }
-        .tablinks.activelink::after{
-            width: 50%;
-        }
-
-        .tabcontents ul li{
-            list-style: none;
-            margin: 10px 0;
-            font-size: 10px;
-            color: rgb(206, 203, 203);
-        }
-        .tabcontents ul li span{
-            color: rgb(114, 179, 235);
-            font-size: 14px;
-            font-weight: 1000;
-        }
-        .tabcontents{
-            display: none;
-        }
-        .tabcontents.activetab{
-            display: block;
-        }
-
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@700&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4237ca9f4d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -194,10 +29,14 @@
 
     <main>
         <section class="firstsection">
-            <div class="leftsection">Hi there👋, 
+            <div class="leftsection">Hi there, 
                 <div>my name is <span class="purpletext">Ashmit.</span></div>
                 <div>& I'm a </div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="images/mycv.pdf" >Download CV  <i class="fa-solid fa-file-lines"></i></a></button>
+                    <button class="btn"><a href="https://linktr.ee/ftashmit">Visit Socials  <i class="fa-solid fa-square-arrow-up-right"></i></a></button>
+                </div>
             </div>
             
             <div class="rightsection">
@@ -208,11 +47,11 @@
         <div id="about">
             <div class="row">
                 <div class="aboutcol1">
-                    <img src="images/pfp.jpg" alt="pfp">
+                    <img src="images/pfp-edit.jpg" alt="pfp">
                 </div>
                 <div class="aboutcol2">
-                    <h1>{About Me.}</h1>
-                    <p><span class="greytext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur atque minus odit, quas aperiam delectus perspiciatis eius dicta totam. Suscipit sint quod ullam a laboriosam totam nulla? Unde aliquam eos sit aspernatur libero at, delectus numquam est facere quo illum, aliquid voluptatem cum beatae ex corporis, magni quas maxime laborum atque amet. Illo soluta accusantium unde debitis nostrum minima molestiae assumenda autem enim exercitationem commodi aspernatur libero culpa magni, maxime ex provident dignissimos? Neque optio inventore magnam temporibus totam harum minima cum at natus est nesciunt et corrupti, saepe labore reprehenderit veniam. Deleniti doloribus eius omnis voluptas perferendis voluptatibus quibusdam!
+                    <h1>About Me.</h1>
+                    <p><span class="greytext">I am a passionate B. Tech student majoring in Computer Science and Technology at the University of Engineering and Management, Kolkata. I am eager to learn more about information technology and software development. I have a strong academic background in computer science and a range of skills in C, Python, Java, HTML & CSS. I am seeking opportunities as a Software Development Engineer (SDE) to further develop my skills and gain valuable corporate experience.In addition to my academic studies, I am a passionate photographer and graphic designer. I have also managed several sports events, which has given me experience in marketing and branding. My diverse interests and experiences allow me to approach problems from a unique perspective and come up with innovative solutions.I am looking forward to connecting with like-minded individuals in the tech industry and exploring opportunities to contribute to innovative projects and initiatives. So, feel free to reach out to me to discuss potential collaborations or to learn more about my experience and skills.
                     </span></p>
                     <div class="tabtitles">
                         <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
@@ -223,11 +62,12 @@
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                             <li><span>Web Development</span><br> Web app Development</li>
+                            <li><span>C|Java|Python</span><br> Complex problem solving ability in C,Java,Python </li>
                         </ul>
                     </div>
                     <div class="tabcontents" id="experience">
                         <ul>
-                            <li><span>CodSoft|(October 2023-November 2023)</span><br>Worked as a WebDeveloper Intern where I had created websites based on HTML5, CSS & JavaScript</li>
+                            <li><span>CodSoft|(October 2023-November 2023)</span><br>Worked as a WebDeveloper Intern where I had created websites based on HTML5, CSS3 & JavaScript</li>
                         </ul>
                     </div>
                     <div class="tabcontents" id="education">
@@ -240,13 +80,112 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <div class="techstack">
+            <h1 align="left">Tech Stack and Tools :</h1>
 
-        
+            <div class="tsicon"><p align="left"> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/>
+            <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p></div>
+        </div>
+        <hr>
+
+        <div id="services">
+            <div class="container">
+                 <h1 class="subtitles">My Services.</h1>
+                <div class="serviceslist">
+                    <div>
+                        <i class="fa-solid fa-code fa-flip"></i>
+                        <h2>Web Developer</h2>
+                        <p>I create websites that are both functional and visually appealing. I will work with you to understand your needs and create a website that is tailored to your specific business or organization & also make sure that your website is easy to use and navigate for your visitors.I use my creativity to help my clients communicate their message and identity in a clear and effective way.</p>
+                        <a href="#">Learn More <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-file-code fa-flip"></i>
+                        <h2>C | Java | Python</h2>
+                        <p>I am skilled at solving complex problems using the programming languages C, Java, and Python. I have developed my skills in these languages through extensive practice and experience. I am able to use these languages to design and implement efficient and effective solutions to a wide range of problems.</p>
+                        <a href="#">Learn More  <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-brush fa-flip"></i>
+                        <h2>Graphic Designer</h2>
+                        <p>I am a skilled graphic designer with a keen eye for detail and a passion for creating visually appealing and effective designs. I have experience in a variety of design software and am able to produce high-quality work on time and within budget. I am also a good communicator and collaborator, and I am always willing to go the extra mile to ensure that my clients are happy with my work.</p>
+                        <a href="#">Learn More  <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<hr>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contactleft">
+                        <h1>Contact Me.</h1>
+                        <p><i class="fa-solid fa-envelope"></i>  ashmitdutta@gmail.com</p>
+                        <p><i class="fa-brands fa-square-whatsapp"></i>  +91 90516 40461</p>
+                        <div class="socialicons">
+                            <a href="https://www.linkedin.com/in/ftashmit/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.github.com/ftashmit"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://twitter.com/ftashmit"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/ftashmit/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100084012086797"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="contactright">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your E-mail id" required>
+                            <textarea name="Message" placeholder="Your Message"  rows="6" required></textarea>
+                            <button type="submit" class="btn btn2"><i class="fa-solid fa-paper-plane"></i>   Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
+
+    <footer>
+        <div class="footer">
+            <!-- <div class="footerfirst"> -->
+                <!-- <h3>Ashmit's Portfolio</h3> -->
+            <!-- </div>
+            <div class="footersecond">
+                <ul>
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Skills</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="footerthird">
+                <ul>
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Skills</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="footerfourth">
+                    <ul>
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Skills</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>   
+        </div> -->
+        <div class="footercopyright">
+                Copyright&#169;ashmitdutta.com|All rights reserved.
+        </div>
+        
+    </footer>
+
+
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Student.', 'Web Developer.','Tech enthusiast.','Software Engineer.'],
+          strings: ['Student.', 'Web Developer.','Tech enthusiast.','OS Contributor.','Software Engineer.'],
           typeSpeed: 70,
         });
       </script>
