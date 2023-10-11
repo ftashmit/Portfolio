@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(0, 0, 7);
     color: white;
@@ -390,4 +393,24 @@ footer{
     font-family: Inter, sans-serif;
     font-size: small;
     font-weight: 300;
+}
+/* webpage responsiveness */
+
+@media only screen and (max-width: 600px){
+    body{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .leftsection{
+        font-size: 30px;
+    }
+}
+#msg{
+    color: #10f310;
+    font-family: Inter, sans-serif;
+    font-size: 10px;
+    margin-top: -20px;
+    margin-bottom: 11px;
+    display: block;
+
 }
