@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:  linear-gradient( rgb(28, 32, 48) 25% ,black 90%);
+    color: white;
+    padding: 10px;
+}
+.todolist{
+    width: 100%;
+    max-width: 540px;
+    background: rgb(16, 18, 26);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: inset;
+}
+.todolist h2{
+    font-family: Inter, sans-serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(200, 199, 199);
+    border-radius: 6.5px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 20px;
+    background: rgb(164, 164, 164);
+    font-size: 16px;
+    color: rgb(29, 29, 29);
+    border-radius: 6.5px;
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(253, 253, 253);
+    transform: scale(1.05);
+    background: rgb(0, 210, 81);
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer; 
+    position: relative;
+}
+ ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/uncheckedwhite.png); 
+    background-size: cover;
+    background-position: center;  
+    top: 10px;
+    left: 8px;
+}
+ul li.checked{
+    color: rgb(99, 99, 99);
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-image: url(images/checked.png); 
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    line-height: 40px;
+}
+ul li span:hover{
+    color: red;
+    background: rgb(67, 66, 66);
+    border-radius: 50%;
+    transform: scale(1.02);
+}
+
+
+footer{
+    background-color: black;
+   
+}
+.footer{
+    display: flex;
+    padding: 10px 5px;
+    justify-content: space-around;
+}
+
+.footer > div{
+    width: 2000px;
+}
+.footercopyright{
+    text-align: center;
+    color: rgb(123, 123, 123);
+    font-family: Inter, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+}

@@ -64,9 +64,7 @@ body h2 a:hover{
     padding: 10px 5px;
     justify-content: space-around;
 }
-/* .footer ul{
-    list-style: none;
-} */
+
 .footer > div{
     width: 2000px;
 }
