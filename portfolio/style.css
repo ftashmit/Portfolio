@@ -499,14 +499,70 @@ footer{
     font-weight: 300;
 }
 /* webpage responsiveness */
-
+nav .fas{
+    display: none;
+}
 @media only screen and (max-width: 600px){
     body{
         margin-top: 100%;
         font-size: 16px;
     }
+    .left{
+        position: relative;
+
+    }
     .leftsection{
         font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background:  rgb(30, 30, 58);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 120vh;
+        padding-top: 50px;
+        display: block;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        
+        cursor: pointer;
+
+    }
+    .subtitle{
+        font-size: 40px;
+    }
+    .aboutcol1, .aboutcol2{
+        flex-basis: 100%;
+    }
+    .aboutcol1{
+        margin-bottom: 0px;
+    }
+    .aboutcol2{
+        font-size: 14px;
+    }
+    .tablinks{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .aboutcol2 p{
+        margin-left: 30px;
+    }
+    .aboutcol2 h1{
+        margin-left: 40px;
     }
 }
 #msg{
