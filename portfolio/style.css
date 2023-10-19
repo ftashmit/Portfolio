@@ -538,9 +538,7 @@ nav .fas{
         position: absolute;
         top: 25px;
         left: 25px;
-        
         cursor: pointer;
-
     }
     .subtitle{
         font-size: 40px;
@@ -563,6 +561,12 @@ nav .fas{
     }
     .aboutcol2 h1{
         margin-left: 40px;
+    }
+    .contactleft, .contactright{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
     }
 }
 #msg{
