@@ -27,4 +27,4 @@ If you would like to contribute to this project, please fork the repository and 
 
 ### Contact
 
-If you have any questions or suggestions, please feel free to contact the author at **ashmitdutta@gmail.**
+If you have any questions or suggestions, please feel free to contact the author at **ashmitdutta@gmail.com**
